@@ -9,7 +9,7 @@
 E-Abyana is a web-based Water Billing Management System designed to automate and digitize the billing process for the Irrigation Department. Developed using Laravel 10.x, JavaScript, and Bootstrap, this system streamlines the entire workflow, from land survey and assessment to bill generation.
 
 ##  Key Features
-✅ Automated Billing Process – Eliminates manual errors and ensures accurate calculations.
+✅ Automated Billing Process – Eliminates manual errors and ensures accurate calculations.<br>
 ✅ Land Survey & Assessment – Digitally records land data for fair and transparent billing.
 ✅ Bill Generation – Generates invoices and enables smooth bill distribution.
 ✅ Record-Keeping & Tracking – Maintains detailed records of billing history and payments.
