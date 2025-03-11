@@ -22,3 +22,87 @@ E-Abyana is a web-based Water Billing Management System designed to automate and
 🔹 Time-Saving: Reduces the time required for billing and administrative tasks.<br>
 
 E-Abyana is a step towards modernizing the irrigation billing system, bringing efficiency, accuracy, and reliability to the process.
+
+# E-Abyana Payment Collection System
+
+## Docker Setup Instructions
+
+This project is dockerized for easy setup and development. Follow these steps to get started:
+
+### Prerequisites
+
+- Docker
+- Docker Compose
+
+### Setup Steps
+
+1. Clone the repository:
+   ```
+   git clone <repository-url>
+   cd E-Abyana-Payment-Collection-System-
+   ```
+
+2. Build and start the Docker containers:
+   ```
+   docker-compose up -d
+   ```
+
+3. Install Composer dependencies:
+   ```
+   docker-compose exec app composer install
+   ```
+
+4. Generate application key (if not already set):
+   ```
+   docker-compose exec app php artisan key:generate
+   ```
+
+5. Run database migrations:
+   ```
+   docker-compose exec app php artisan migrate
+   ```
+
+6. Install NPM dependencies and build assets:
+   ```
+   docker-compose exec app npm install
+   docker-compose exec app npm run build
+   ```
+
+7. Access the application:
+   Open your browser and navigate to `http://localhost`
+
+### Useful Commands
+
+- View logs:
+  ```
+  docker-compose logs -f
+  ```
+
+- Access the PHP container:
+  ```
+  docker-compose exec app bash
+  ```
+
+- Access the MySQL container:
+  ```
+  docker-compose exec db bash
+  ```
+
+- Stop the containers:
+  ```
+  docker-compose down
+  ```
+
+## Development
+
+The application code is mounted as a volume, so any changes you make to the code will be reflected immediately in the running application.
+
+## Database
+
+- Host: db
+- Port: 3306
+- Database: durshal_abyana
+- Username: root
+- Password: root
+
+You can connect to the database using any MySQL client with these credentials.
